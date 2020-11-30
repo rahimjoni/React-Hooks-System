@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Accordion from "./components/Accordion";
+import Search from "./components/Search";
 import 'semantic-ui-css/semantic.min.css'
 
 function App() {
@@ -26,7 +27,8 @@ function App() {
   ]
   return (
     <div className="App" style={{textAlign:"left"}}>
-      <Accordion items={items}/>
+      {/*<Accordion items={items}/>*/}
+      <Search/>
     </div>
   );
 }
