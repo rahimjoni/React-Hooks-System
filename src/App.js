@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Accordion from "./components/Accordion";
 import Search from "./components/Search";
+import Dropdown from "./components/Dropdown";
 import 'semantic-ui-css/semantic.min.css'
 
 function App() {
@@ -25,10 +26,25 @@ function App() {
     },
 
   ]
+  const options = [
+    {
+      label:'This is Red',
+      value:'Red'
+    },
+    {
+      label:'This is Blue',
+      value:'Blue'
+    },
+    {
+      label:'This is Black',
+      value:'Black'
+    },
+  ]
   return (
     <div className="App" style={{textAlign:"left"}}>
       {/*<Accordion items={items}/>*/}
-      <Search/>
+      {/*<Search/>*/}
+      <Dropdown options={options}/>
     </div>
   );
 }
