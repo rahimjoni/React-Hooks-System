@@ -25,7 +25,7 @@ function App() {
 
   ]
   return (
-    <div className="App">
+    <div className="App" style={{textAlign:"left"}}>
       <Accordion items={items}/>
     </div>
   );
